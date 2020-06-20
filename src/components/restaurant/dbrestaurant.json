@@ -11,13 +11,6 @@
   ],
   "restaurant": [
     {
-      "name": "KFC Restourant",
-      "email": "pgrestaurant@text.com",
-      "rating": "4.0",
-      "address": "Mumbai, Delhi",
-      "id": 1
-    },
-    {
       "name": "ravi",
       "email": "ravi@ll.com",
       "rating": "",
@@ -30,6 +23,15 @@
       "rating": "4.0",
       "address": "Mumbai, Delhi",
       "id": 8
+    },
+    {
+      "name": "hello",
+      "rating": "5",
+      "id": 13
+    },
+    {
+      "name": "kkka",
+      "id": 14
     }
   ]
 }

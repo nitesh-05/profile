@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import Profile_main from "./components/Profile_main";
+import ProfileMain from "./components/ProfileMain";
 // import Weather_main from "./components/weatherApp/Weather_main";
 // import Covid_main from "./components/CovidApp/Covid_main";
 // import ComponentA from "./components/Hooks/ComponentA";
@@ -16,7 +16,7 @@ import Profile_main from "./components/Profile_main";
 function App() {
   return (
     <div className="App">
-      <Profile_main />
+      <ProfileMain />
       {/* <Weather_main /> */}
       {/* <Covid_main /> */}
       {/* <ComponentA /> */}

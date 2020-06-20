@@ -3,7 +3,7 @@ import React from "react";
 import profile_data from "./profile_data";
 import { ProgressBar } from "react-bootstrap";
 
-function Profile_main() {
+function ProfileMain() {
   return (
     <div className="container-fluid">
       <nav className="row navbar navbar-expand-md navbar-dark nav-style">
@@ -53,7 +53,7 @@ function Profile_main() {
       </div>
       <div className="row">
         <div className="col-md-12">
-          <img src="images/images.png" alt="profile image" />
+          <img src="images/images.png" alt="profileImage" />
         </div>
         <div className="col-sm-12">
           <img
@@ -122,7 +122,7 @@ function Profile_main() {
                                 <ProgressBar
                                   animated
                                   now={tool_list[1]}
-                                  label={`${tool_list[1]}%`}
+                                  // label={`${tool_list[1]}%`}
                                 />
                               </div>
                             </div>
@@ -158,12 +158,17 @@ function Profile_main() {
         <div className="col-12 col-md-3 imgcontainer">
           <img
             src="images/covid19.png"
-            alt="Avatar"
-            className="website img-responsive col-12"
+            alt="Corona"
+            className="website img-responsive col-12 mt-2"
+            style={{ borderRadius: "40px" }}
           />
           <div className="overlay">
             <div className="text">
-              <a href="https://covid-worldwide.netlify.app/" target="_blank">
+              <a
+                href="https://covid-worldwide.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
@@ -172,13 +177,18 @@ function Profile_main() {
 
         <div className="col-12 col-md-3 imgcontainer col-12">
           <img
-            src="images/covid19.png"
-            alt="Avatar"
-            className="website img-responsive col-12"
+            src="images/login.png"
+            alt="restaurant"
+            className="website img-responsive col-12 mt-2"
+            style={{ borderRadius: "40px" }}
           />
           <div className="overlay">
             <div className="text">
-              <a href="https://covid-worldwide.netlify.app/">
+              <a
+                href="https://nitesh-restaurant.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
@@ -186,10 +196,19 @@ function Profile_main() {
         </div>
 
         <div className="col-12 col-md-3 imgcontainer">
-          <img src="images/images.png" alt="Avatar" className="website " />
+          <img
+            src="images/weather.png"
+            alt="Weather"
+            className="website img-responsive col-12 mt-2"
+            style={{ borderRadius: "40px" }}
+          />
           <div className="overlay">
             <div className="text">
-              <a href="https://covid-worldwide.netlify.app/">
+              <a
+                href="https://nitesh-weatherapp.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
@@ -197,11 +216,20 @@ function Profile_main() {
         </div>
 
         <div className="col-12 col-md-3 imgcontainer">
-          <img src="images/images.png" alt="Avatar" className="website " />
+          <img
+            src="images/blog.png"
+            alt="Blog"
+            className="weather img-responsive col-12 mt-2"
+            style={{ borderRadius: "40px" }}
+          />
           <div className="overlay">
             <div className="text">
-              <a href="https://covid-worldwide.netlify.app/">
-                <button className="btn btn-warning">Visit Website</button>
+              <a
+                href="https://niteshgts05.blogspot.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn btn-warning">Visit Blog</button>
               </a>
             </div>
           </div>
@@ -209,9 +237,29 @@ function Profile_main() {
       </div>
 
       {/* contact */}
+      {/* <div>
+        <div
+          class="jumbotron jumbotron-fluid"
+          style={{ backgroundColor: "#5f27cd", color: "#ffffff" }}
+        >
+          <div class="container">
+            <h1 class="display-5">Area Of Interest</h1>
+            <hr className="my-2" />
+            <p class="lead">Web designing</p>
+            <p class="lead">Web developing</p>
+            <p class="lead">Artificial Intelligence</p>
+            <p class="lead">Machine Learning</p>
+            <p class="lead">Deep Learning</p>
+            <p class="lead">Computer Vision</p>
+            <a href="https://docs.google.com/document/d/1fM7u1moKa_onxhXzYjbrExla7WvuGgl0__3HS1XNPq8/edit?usp=sharing">
+              Link to CV
+            </a>
+          </div>
+        </div>
+      </div> */}
 
       {/* contact */}
     </div>
   );
 }
-export default Profile_main;
+export default ProfileMain;

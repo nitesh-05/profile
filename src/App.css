@@ -46,7 +46,13 @@ body {
 }
 
 .imgcontainer:hover .overlay {
-  opacity: 1;
+  opacity: 0.8;
+}
+
+.container a {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .text a {
