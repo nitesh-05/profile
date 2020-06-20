@@ -7,7 +7,7 @@ function Profile_main() {
   return (
     <div className="container-fluid">
       <nav className="row navbar navbar-expand-md navbar-dark nav-style">
-        <a style={{ fontSize: "2rem" }} className="navbar-brand" href="#">
+        <a style={{ fontSize: "2rem" }} className="navbar-brand" href="#about">
           NK
         </a>
         <button
@@ -25,11 +25,11 @@ function Profile_main() {
                 About
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#">
                 Contact
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="#project">
                 Projects
@@ -58,7 +58,7 @@ function Profile_main() {
         <div className="col-sm-12">
           <img
             src="images/flat.png"
-            alt="profile image"
+            alt="profilePic"
             style={{ maxWidth: "100%" }}
           />
         </div>
@@ -171,10 +171,14 @@ function Profile_main() {
         </div>
 
         <div className="col-12 col-md-3 imgcontainer col-12">
-          <img src="images/images.png" alt="Avatar" className="website " />
+          <img
+            src="images/covid19.png"
+            alt="Avatar"
+            className="website img-responsive col-12"
+          />
           <div className="overlay">
             <div className="text">
-              <a href="#">
+              <a href="https://covid-worldwide.netlify.app/">
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
@@ -185,7 +189,7 @@ function Profile_main() {
           <img src="images/images.png" alt="Avatar" className="website " />
           <div className="overlay">
             <div className="text">
-              <a href="#">
+              <a href="https://covid-worldwide.netlify.app/">
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
@@ -196,7 +200,7 @@ function Profile_main() {
           <img src="images/images.png" alt="Avatar" className="website " />
           <div className="overlay">
             <div className="text">
-              <a href="">
+              <a href="https://covid-worldwide.netlify.app/">
                 <button className="btn btn-warning">Visit Website</button>
               </a>
             </div>
