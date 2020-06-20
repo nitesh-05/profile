@@ -9,7 +9,7 @@ import RestaurantSearch from "./RestaurantSearch";
 import Login from "./Login";
 import Logout from "./Logout";
 import Protected from "./Protected";
-const Restaurant_main = (props) => {
+const Restaurant_main = () => {
   return (
     <Router>
       <Switch>
@@ -46,7 +46,7 @@ const Restaurant_main = (props) => {
 
         <Protected exact path="/" component={Home} />
       </Switch>
-      <button onClick={() => props.clickBtn(0)}>Go Back</button>
+      {/* <button onClick={() => props.clickBtn(0)}>Go Back</button> */}
     </Router>
   );
 };

@@ -60,3 +60,29 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* animation in css3 */
+.batman_contact {
+  height: 100px;
+  width: 90%;
+  position: relative;
+  /* background-color: rgba(0, 0, 255, 0.5); */
+}
+.batman_contact img {
+  height: 80px;
+  width: 90px;
+  position: absolute;
+  left: 0;
+  animation-name: batmanbhag;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes batmanbhag {
+  from {
+    left: 0;
+  }
+  to {
+    left: 80%;
+  }
+}
