@@ -1,0 +1,66 @@
+.inputfield[type="text"] {
+  width: 180px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-bottom: 2px solid black;
+
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: transparent;
+  /* background-image: url("../assets/search1.jpg"); */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 2px 10px 2px 10px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.inputfield[type="text"]:focus {
+  width: 50%;
+  color: white;
+}
+
+.covidheader {
+  background-color: #a29bfe;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+.hoverTable {
+  width: 100%;
+  border: steelblue 1px solid;
+  border-collapse: collapse;
+  position: relative;
+  color: white;
+  overflow-x: scroll;
+}
+.hoverTable th {
+  padding: 10px;
+  font-size: large;
+  color: black;
+  background-color: snow;
+}
+
+.hoverTable td {
+  padding: 8px;
+  border-top: #fd79a8 0.5px solid;
+  text-align: left;
+}
+/* Define the default color for all the table rows */
+.hoverTable tr:nth-child(odd) {
+  background: #74b9ff;
+}
+.hoverTable tr:nth-child(even) {
+  background: #0984e3;
+}
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+  background-color: #ffff99;
+  font-size: 1rem;
+  font-weight: 600;
+  color: blue;
+  cursor: pointer;
+  -webkit-transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
+}

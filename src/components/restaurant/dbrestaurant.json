@@ -1,0 +1,35 @@
+{
+  "login": [
+    {
+      "name": "ravi",
+      "password": 123
+    },
+    {
+      "name": "nitesh",
+      "password": 1234
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "KFC Restourant",
+      "email": "pgrestaurant@text.com",
+      "rating": "4.0",
+      "address": "Mumbai, Delhi",
+      "id": 1
+    },
+    {
+      "name": "ravi",
+      "email": "ravi@ll.com",
+      "rating": "",
+      "address": "12",
+      "id": 12
+    },
+    {
+      "name": "t Restourant",
+      "email": "pgrestaurant@text.com",
+      "rating": "4.0",
+      "address": "Mumbai, Delhi",
+      "id": 8
+    }
+  ]
+}

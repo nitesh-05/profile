@@ -1,0 +1,50 @@
+import React from "react";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import "./style_restaurant.css";
+import Home from "./Home";
+import RestaurantList from "./RestaurantList";
+import RestaurantCreate from "./RestaurantCreate";
+import RestaurantUpdate from "./RestaurantUpdate";
+import RestaurantSearch from "./RestaurantSearch";
+import RestaurantDetails from "./RestaurantDetails";
+import Login from "./Login";
+import Logout from "./Logout";
+import NavBar_menu from "./NavBar_menu";
+
+
+const Restaurant_main = () => {
+  return (
+    <Router>
+      <NavBar_menu />
+      <Switch>
+        <Route path="/list">
+          <RestaurantList />
+        </Route>
+        <Route path="/create">
+          <RestaurantCreate />
+        </Route>
+        <Route path="/search" component={RestaurantSearch} />
+        {/* <RestaurantSearch /> */}
+        {/* </Route> */}
+        <Route path="/details">
+          <RestaurantDetails />
+        </Route>
+        <Route
+          path="/update/:id"
+          render={(props) => <RestaurantUpdate {...props} />}
+        ></Route>
+
+        <Route path="/login" render={(props) => <Login {...props} />}></Route>
+        <Route path="/logout">
+          <Logout />
+        </Route>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
+
+export default Restaurant_main;
