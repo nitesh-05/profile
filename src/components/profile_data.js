@@ -33,8 +33,27 @@ const profile_data = [
       ["JavaScript", 75],
     ],
   },
+
   {
     id: 3,
+    icon: "far fa-file-code",
+    title: "Backed-end Developer",
+    desc:
+      " I like to code things from scratch, and enjoy bringing ideas to life using logic.",
+    todo: "Languages I speak:",
+    list: "Nodejs, Expressjs, Python, Javascript",
+    tools: "Dev Tools / Languages",
+    tools_list: [
+      ["NodeJS", 65],
+      ["ExpressJS", 55],
+      ["Python", 70],
+      ["JavaScript", 95],
+      ["WebRTC", 65],
+    ],
+  },
+  
+  {
+    id: 4,
     icon: "far fa-id-card",
     title: "Work Experience",
     desc:
